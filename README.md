@@ -20,7 +20,7 @@ Originally built to target the [Formd T1 Titanium](https://formdt1.com).
 - Waits for the user to manually log in, then **serializes the authenticated session cookies to disk using `pickle`**
 - This means the bot never stores raw credentials — it captures and reuses a live browser session instead
 
-### `formd_web_check.py` — Monitor & Purchase
+### `web_check.py` — Monitor & Purchase
 1. **Loads the saved session** — restores cookies into a new Chrome session so the bot is pre-authenticated
 2. **Polls the product page** on a randomized interval (~30–38 minutes) to avoid detection
 3. **Checks stock status** by inspecting the `disabled` attribute on the Shop Pay accelerated checkout button via XPath
